@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Chat Maastr</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+  <div class="bar"><div class="cm">CM</div><div class="brand">Chat Maastr<small>Private Messenger</small></div><button class="btn closeSide" aria-label="Close">✕</button></div>
+  <div class="search"><div class="searchbox">⌕ <input id="search" placeholder="Search or start new chat"></div></div>
+  <div class="list" id="list">
+    <div class="chat active" data-name="Aisha Khan" data-initial="AK"><div class="av">AK</div><div class="info"><div class="row"><span>Aisha Khan</span><small>10:42</small></div><div class="preview">See you tomorrow! 👋</div></div></div>
+    <div class="chat" data-name="Rahul Verma" data-initial="RV"><div class="av">RV</div><div class="info"><div class="row"><span>Rahul Verma</span><small>09:18</small></div><div class="preview">The design looks great.</div></div></div>
+    <div class="chat" data-name="Sara Ali" data-initial="SA"><div class="av">SA</div><div class="info"><div class="row"><span>Sara Ali</span><small>Yesterday</small></div><div class="preview">Can you send the files?</div></div></div>
+    <div class="chat" data-name="Arjun Mehta" data-initial="AM"><div class="av">AM</div><div class="info"><div class="row"><span>Arjun Mehta</span><small>Mon</small></div><div class="preview">Let's catch up soon.</div></div></div>
+  </div>
+</aside>
+<div class="overlay" id="overlay"></div>
+<main class="main">
+<header class="head">
+  <button class="btn menuBtn" id="menuBtn" aria-label="Chats">☰</button>
+  <div class="av" id="ha">AK</div><div class="person"><b id="hn">Aisha Khan</b><span id="status">● online</span></div>
+  <button class="btn" id="searchBtn" aria-label="Search">⌕</button><button class="btn" id="moreBtn" aria-label="More">⋮</button>
+</header>
+<section class="messages" id="messages">
+  <div class="date">TODAY</div>
+  <div class="m"><div class="bubble">Hey! How are you?<div class="stamp">10:39</div></div></div>
+  <div class="m me"><div class="bubble">I'm good! Welcome to <b>Chat Maastr</b> 👋<div class="stamp">10:40 <span class="ticks">✓✓</span></div></div></div>
+  <div class="m"><div class="bubble">Nice! It feels like a familiar messenger.<div class="stamp">10:41</div></div></div>
+  <div class="m me"><div class="bubble">That's the idea. Clean, simple and fast.<div class="stamp">10:42 <span class="ticks">✓✓</span></div></div></div>
+</section>
+<form class="composer" id="form">
+  <button type="button" class="btn" id="attachBtn" aria-label="Attach">＋</button>
+  <input id="input" placeholder="Type a message" autocomplete="off">
+  <button type="button" class="emoji" id="emojiBtn">☺</button>
+  <button class="send" aria-label="Send">➤</button>
+</form>
+<nav class="mobile">
+  <button class="active" id="chatsNav">💬<small>Chats</small></button>
+  <button id="contactsNav">👤<small>Contacts</small></button>
+  <button id="settingsNav">⚙<small>Settings</small></button>
+</nav>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
