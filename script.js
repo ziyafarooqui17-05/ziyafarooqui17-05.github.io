@@ -1,4 +1,0 @@
-const chats=document.querySelectorAll('.chat'),ha=document.getElementById('ha'),hn=document.getElementById('hn'),messages=document.getElementById('messages'),input=document.getElementById('input');
-chats.forEach(c=>c.onclick=()=>{chats.forEach(x=>x.classList.remove('active'));c.classList.add('active');ha.textContent=c.dataset.initial;hn.textContent=c.dataset.name});
-document.getElementById('search').oninput=e=>{let q=e.target.value.toLowerCase();chats.forEach(c=>c.style.display=c.dataset.name.toLowerCase().includes(q)?'flex':'none')};
-document.getElementById('form').onsubmit=e=>{e.preventDefault();let t=input.value.trim();if(!t)return;let d=document.createElement('div');d.className='m me';d.innerHTML='<div class="bubble"></div>';d.firstChild.textContent=t;let s=document.createElement('div');s.className='stamp';s.innerHTML='now <span class="ticks">✓</span>';d.firstChild.appendChild(s);messages.appendChild(d);input.value='';messages.scrollTop=messages.scrollHeight};
